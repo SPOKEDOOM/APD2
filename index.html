@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Practice interviews with an AI coach and receive focused feedback."
+    />
+    <title>AI Interview Coach — ADPList</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <a class="logo" href="#top"><span>ADP</span>List</a>
+
+      <nav aria-label="Main navigation">
+        <a href="#interviews">Find an interview</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="navActions">
+        <button class="textBtn" type="button">Log in</button>
+        <button class="darkBtn open-modal" type="button">
+          Practice for free →
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="eyebrow">✦ Free AI interview practice</div>
+
+        <h1>
+          Practice the interview<br />
+          that <em>matters.</em>
+        </h1>
+
+        <p>
+          Rehearse out loud with an AI interviewer that asks real follow-up
+          questions, then get an honest, specific read on where you stand.
+        </p>
+
+        <a class="darkBtn heroBtn" href="#interviews">
+          Choose an interview →
+        </a>
+
+        <div class="preview">
+          <div class="previewTop">
+            <div><span class="liveDot"></span> AI interviewer</div>
+            <span>Senior Product Designer · Meta</span>
+          </div>
+
+          <div class="question">
+            “Walk me through a product you shipped end to end at scale. What
+            was your specific role?”
+          </div>
+
+          <div class="wave" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+
+          <div class="answer">
+            <span class="mic">●</span>
+            <div>
+              <b>You answer out loud</b>
+              <small>The interviewer listens and asks a real follow-up.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust">
+          <span>Practice for roles at</span>
+          <b>Google</b>
+          <b>meta</b>
+          <b>airbnb</b>
+          <b>OpenAI</b>
+          <b>Figma</b>
+        </div>
+      </section>
+
+      <section class="catalog" id="interviews">
+        <div class="sectionHead">
+          <div>
+            <span class="kicker">45 INTERVIEWS · FREE TO PRACTICE</span>
+            <h2>Pick your practice</h2>
+          </div>
+
+          <label class="search">
+            <span aria-hidden="true">⌕</span>
+            <input
+              id="search"
+              type="search"
+              placeholder="Search interviews"
+              aria-label="Search interviews"
+            />
+          </label>
+        </div>
+
+        <div class="filters" aria-label="Interview filters">
+          <button class="active" data-filter="All" type="button">All</button>
+          <button data-filter="Popular" type="button">Popular</button>
+          <button data-filter="Design" type="button">Design</button>
+          <button data-filter="Product" type="button">Product</button>
+        </div>
+
+        <div class="cards" id="cards"></div>
+        <div class="empty" id="empty" hidden>
+          No interviews found. Try another search.
+        </div>
+      </section>
+
+      <section class="how" id="how">
+        <span class="kicker">HOW IT WORKS</span>
+        <h2>Practice. Learn. Get better.</h2>
+
+        <div class="steps">
+          <article>
+            <strong>01</strong>
+            <div class="stepIcon">↗</div>
+            <h3>Pick an interview</h3>
+            <p>
+              Choose a company-style scenario or paste the exact job you're
+              interviewing for.
+            </p>
+          </article>
+
+          <article>
+            <strong>02</strong>
+            <div class="stepIcon">●</div>
+            <h3>Talk it through out loud</h3>
+            <p>
+              Have a real spoken interview with 4 to 6 questions and genuine
+              follow-up probes.
+            </p>
+          </article>
+
+          <article>
+            <strong>03</strong>
+            <div class="stepIcon">✓</div>
+            <h3>Get an honest scorecard</h3>
+            <p>
+              See where you stand, the moments that cost you, and your three
+              moves to improve.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote">
+        <div class="quoteAvatar">JL</div>
+        <blockquote>
+          “It didn't feel like talking to a bot. The follow-up questions made
+          me stop and think—exactly what I needed before my real interview.”
+        </blockquote>
+        <p>Jamie L. · Product Designer</p>
+      </section>
+
+      <section class="faq" id="faq">
+        <span class="kicker">QUESTIONS, ANSWERED</span>
+        <h2>Frequently asked questions</h2>
+
+        <div class="faqList">
+          <button class="faqItem" type="button">
+            <div>
+              <b>Is the AI interview coach free?</b>
+              <span>⌄</span>
+            </div>
+            <p>
+              Yes. Practicing interviews on ADPList is completely free. Create
+              a free account, pick an interview and start practicing right away.
+            </p>
+          </button>
+
+          <button class="faqItem collapsed" type="button">
+            <div>
+              <b>What kinds of interviews can I practice?</b>
+              <span>⌄</span>
+            </div>
+            <p>
+              Product design and product management interviews, portfolio and
+              case-study walkthroughs, resume reviews and salary negotiations.
+            </p>
+          </button>
+
+          <button class="faqItem collapsed" type="button">
+            <div>
+              <b>How does the AI interviewer work?</b>
+              <span>⌄</span>
+            </div>
+            <p>
+              The coach asks 4–6 realistic questions, listens to your answers,
+              and follows up based on what you say.
+            </p>
+          </button>
+
+          <button class="faqItem collapsed" type="button">
+            <div>
+              <b>What feedback will I get?</b>
+              <span>⌄</span>
+            </div>
+            <p>
+              You receive a scorecard across five dimensions and three focused
+              ways to improve.
+            </p>
+          </button>
+        </div>
+      </section>
+
+      <section class="cta">
+        <span>✦</span>
+        <h2>Ready when you are.</h2>
+        <p>Free to practice. No scheduling, no waiting.</p>
+        <button class="open-modal" type="button">
+          Practice an interview →
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logo"><span>ADP</span>List</div>
+      <p>Practice makes progress.</p>
+      <span>© 2026 ADPList Pte. Ltd.</span>
+    </footer>
+
+    <div class="overlay" id="modal" hidden>
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button class="close" type="button" aria-label="Close modal">×</button>
+        <span class="modalIcon">●</span>
+        <h2 id="modal-title">Start practicing for free</h2>
+        <p>
+          Create an account to save your interviews and get a personalized
+          scorecard.
+        </p>
+        <button class="google" type="button">G&nbsp; Continue with Google</button>
+        <button class="email" type="button">Continue with email</button>
+        <small>
+          By continuing, you agree to ADPList’s Terms and Privacy Policy.
+        </small>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
