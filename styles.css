@@ -137,7 +137,7 @@ button { cursor:pointer; }
 }
 
 /* Innovative bento dashboard composition */
-@media (min-width:1301px) {
+@media (min-width:1180px) {
   body { background:linear-gradient(135deg,#fbfcfd 0%,#fff 45%,#fbf8ff 100%); }
   .report { max-width:1400px;width:auto;margin:0 auto;padding:42px 54px;display:grid;grid-template-columns:repeat(12,1fr);gap:22px; }
   .summary-card { grid-column:span 8;position:relative;overflow:hidden;min-height:330px;border-radius:26px;background:linear-gradient(135deg,#fff 15%,#faf5ff 100%); }
