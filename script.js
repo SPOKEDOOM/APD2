@@ -1,5 +1,22 @@
-const data=[['R','Resume/CV Review','','4,006+','Popular'],['S','Salary Negotiation','','2,516+','Popular'],['P','Portfolio Walkthrough','','4,228+','Popular'],['meta','Senior Product Designer','Meta','3,718+','Design'],['meta','Product Designer','Meta','3,913+','Design'],['G','Product Designer','Google','4,119+','Design'],['G','Senior UX Designer','Google','4,117+','Design'],['A','Human Interface Designer','Apple','2,603+','Design'],['A','Senior Product Designer','Airbnb','4,304+','Design'],['O','Senior Product Designer','OpenAI','2,702+','Design'],['AI','Product Designer','Anthropic','4,305+','Design'],['F','Senior Product Designer','Figma','3,801+','Design'],['N','Product Designer','Notion','2,606+','Design'],['S','Senior Product Manager','Stripe','4,401+','Product'],['G','Product Manager','Google','2,909+','Product'],['meta','Product Manager','Meta','4,803+','Product']];
-let filter='All';const cards=document.querySelector('#cards'),search=document.querySelector('#search'),empty=document.querySelector('#empty'),modal=document.querySelector('#modal');
-const openModal=()=>{modal.hidden=false;document.body.style.overflow='hidden'},closeModal=()=>{modal.hidden=true;document.body.style.overflow=''};
-function render(){const q=search.value.toLowerCase(),items=data.filter(x=>(filter==='All'||x[4]===filter)&&`${x[1]} ${x[2]}`.toLowerCase().includes(q));cards.innerHTML=items.map((x,i)=>`<button class="card"><span class="brand brand${i%5}">${x[0]}</span><span class="cardText"><b>${x[1]}</b>${x[2]?`<span>${x[2]}</span>`:''}<small>Join ${x[3]} practicing</small></span><span class="cardArrow">→</span></button>`).join('');empty.hidden=items.length>0;cards.querySelectorAll('.card').forEach(x=>x.onclick=openModal)}
-document.querySelectorAll('.filters button').forEach(x=>x.onclick=()=>{document.querySelector('.filters .active').classList.remove('active');x.classList.add('active');filter=x.dataset.filter;render()});document.querySelectorAll('.faqItem').forEach(x=>x.onclick=()=>x.classList.toggle('collapsed'));document.querySelectorAll('.open-modal').forEach(x=>x.onclick=openModal);document.querySelector('.close').onclick=closeModal;modal.onclick=e=>{if(e.target===modal)closeModal()};search.oninput=render;render();
+const toast = document.querySelector("#toast");
+let toastTimer;
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
+}
+
+document.querySelector(".primary").addEventListener("click", () => {
+  document.querySelector(".answer-review").scrollIntoView({ behavior: "smooth" });
+  showToast("Review the reframed answers above");
+});
+
+document.querySelectorAll(".secondary, .book-session").forEach((button) => {
+  button.addEventListener("click", () => showToast("Mentor booking opened"));
+});
+
+document.querySelector(".chat").addEventListener("click", () => {
+  showToast("Chat support is ready");
+});

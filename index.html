@@ -3,251 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Practice interviews with an AI coach and receive focused feedback."
-    />
-    <title>AI Interview Coach — ADPList</title>
+    <meta name="description" content="ADPList AI interview review and coaching feedback." />
+    <title>Interview Review — ADPList</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <header>
-      <a class="logo" href="#top"><span>ADP</span>List</a>
-
-      <nav aria-label="Main navigation">
-        <a href="#interviews">Find an interview</a>
-        <a href="#how">How it works</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-
-      <div class="navActions">
-        <button class="textBtn" type="button">Log in</button>
-        <button class="darkBtn open-modal" type="button">
-          Practice for free →
-        </button>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="ADPList home"><span class="brand-mark">◉</span>ADPList</a>
+      <div class="topbar-center">
+        <button class="browse" type="button">Browse <span>⌄</span></button>
+        <label class="mentor-search"><span>⌕</span><input type="search" placeholder="Search mentors" /></label>
+      </div>
+      <div class="topbar-actions">
+        <button class="notification" type="button" aria-label="Notifications">♧</button>
+        <button class="book-session" type="button"><span>▣</span> Book session</button>
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="eyebrow">✦ Free AI interview practice</div>
+    <aside class="sidebar" aria-label="Dashboard navigation">
+      <nav>
+        <a href="#"><span class="nav-icon">⌂</span><small>Home</small></a>
+        <a class="active" href="#"><span class="nav-icon">♙</span><small>Partner</small><b>New</b></a>
+        <a href="#"><span class="nav-icon">◉</span><small>Explore</small></a>
+        <a href="#"><span class="nav-icon">⌁</span><small>Journal</small></a>
+        <a href="#"><span class="nav-icon">▱</span><small>Messages</small></a>
+        <a href="#"><span class="nav-icon">◷</span><small>Bookings</small></a>
+        <a href="#"><span class="nav-icon">•••</span><small>More</small></a>
+      </nav>
+      <div class="sidebar-avatar" aria-label="Profile">👥</div>
+    </aside>
 
-        <h1>
-          Practice the interview<br />
-          that <em>matters.</em>
-        </h1>
-
-        <p>
-          Rehearse out loud with an AI interviewer that asks real follow-up
-          questions, then get an honest, specific read on where you stand.
-        </p>
-
-        <a class="darkBtn heroBtn" href="#interviews">
-          Choose an interview →
-        </a>
-
-        <div class="preview">
-          <div class="previewTop">
-            <div><span class="liveDot"></span> AI interviewer</div>
-            <span>Senior Product Designer · Meta</span>
+    <main class="page">
+      <section class="report">
+        <section class="summary-card">
+          <div class="readiness-ring ring-38">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-track" cx="60" cy="60" r="52" />
+              <circle class="ring-value" cx="60" cy="60" r="52" />
+            </svg>
+            <div><strong>38%</strong><span>READY FOR SENIOR</span></div>
           </div>
-
-          <div class="question">
-            “Walk me through a product you shipped end to end at scale. What
-            was your specific role?”
+          <div class="summary-copy">
+            <p class="eyebrow">YOUR SCORECARD · REVIEW #2</p>
+            <h1>Below-bar for senior-level expectations, lacking in detail and structured thought.</h1>
+            <p>The interview lacked specific examples, structured answers, and demonstrated judgment.</p>
+            <small>Ahead of ~24% of people practicing for this role <span>(community estimate)</span></small>
           </div>
+        </section>
 
-          <div class="wave" aria-hidden="true">
-            <i></i><i></i><i></i><i></i><i></i><i></i>
-            <i></i><i></i><i></i><i></i><i></i>
+        <section class="gap-card">
+          <div class="readiness-ring ring-29 small-ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-track" cx="60" cy="60" r="52" />
+              <circle class="ring-value" cx="60" cy="60" r="52" />
+            </svg>
+            <div><strong>29%</strong></div>
           </div>
-
-          <div class="answer">
-            <span class="mic">●</span>
-            <div>
-              <b>You answer out loud</b>
-              <small>The interviewer listens and asks a real follow-up.</small>
-            </div>
+          <div class="gap-copy">
+            <p class="eyebrow purple">ONE GAP BETWEEN YOU AND READY</p>
+            <h2>Backing claims with numbers <span>2&nbsp; →&nbsp; 7&nbsp; needed&nbsp; for&nbsp; Senior</span></h2>
+            <p>Put a number on every outcome — even a defensible estimate.</p>
+            <small><b>Your coach’s read:</b> judgment</small>
           </div>
-        </div>
+        </section>
 
-        <div class="trust">
-          <span>Practice for roles at</span>
-          <b>Google</b>
-          <b>meta</b>
-          <b>airbnb</b>
-          <b>OpenAI</b>
-          <b>Figma</b>
-        </div>
-      </section>
+        <section class="standing">
+          <p class="section-label">WHERE YOU STAND</p>
+          <div class="metric"><b>Content relevance</b><span class="bar"><i style="width:30%"></i></span><strong>3 <em>/10</em></strong><span class="dash">—</span></div>
+          <div class="metric"><b>Structure</b><span class="bar"><i style="width:30%"></i></span><strong>3 <em>/10</em></strong><span class="dash">—</span></div>
+          <div class="metric"><b>Specificity &amp; impact</b><span class="bar"><i style="width:20%"></i></span><strong>2 <em>/10</em></strong><span class="dash">—</span></div>
+          <div class="metric"><b>Judgment</b><span class="bar"><i style="width:20%"></i></span><strong>2 <em>/10</em></strong><span class="dash">—</span></div>
+          <div class="metric"><b>Delivery</b><span class="bar"><i style="width:50%"></i></span><strong>5 <em>/10</em></strong><span class="dash">—</span></div>
+        </section>
 
-      <section class="catalog" id="interviews">
-        <div class="sectionHead">
-          <div>
-            <span class="kicker">45 INTERVIEWS · FREE TO PRACTICE</span>
-            <h2>Pick your practice</h2>
-          </div>
+        <p class="section-label progress-label">YOUR PROGRESS</p>
+        <figure class="score-chart" aria-labelledby="chart-title chart-description">
+          <figcaption id="chart-title">Interview score</figcaption>
+          <p id="chart-description">The interview score changes from 3.0 to 2.1 on August 1.</p>
 
-          <label class="search">
-            <span aria-hidden="true">⌕</span>
-            <input
-              id="search"
-              type="search"
-              placeholder="Search interviews"
-              aria-label="Search interviews"
+          <svg
+            class="chart-svg"
+            viewBox="0 0 720 138"
+            role="img"
+            aria-hidden="true"
+            preserveAspectRatio="none"
+          >
+            <defs>
+              <linearGradient id="scoreFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#a23fe2" stop-opacity="0.17" />
+                <stop offset="100%" stop-color="#a23fe2" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="scoreLine" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#a445e3" />
+                <stop offset="100%" stop-color="#8432c7" />
+              </linearGradient>
+            </defs>
+
+            <line class="chart-grid" x1="40" y1="16" x2="704" y2="16" />
+            <line class="chart-grid" x1="40" y1="61" x2="704" y2="61" />
+            <line class="chart-grid" x1="40" y1="106" x2="704" y2="106" />
+
+            <path
+              class="chart-fill"
+              d="M 40 79 C 215 82, 450 88, 704 92 L 704 106 L 40 106 Z"
             />
-          </label>
+            <path
+              class="chart-path"
+              d="M 40 79 C 215 82, 450 88, 704 92"
+            />
+
+            <circle class="chart-start-ring" cx="40" cy="79" r="7" />
+            <circle class="chart-start" cx="40" cy="79" r="4.5" />
+            <circle class="chart-end-ring" cx="704" cy="92" r="7" />
+            <circle class="chart-end" cx="704" cy="92" r="4.5" />
+
+            <text class="axis-label" x="22" y="19">10</text>
+            <text class="axis-label" x="22" y="64">5</text>
+            <text class="score-label" x="29" y="71">3.0</text>
+            <text class="axis-label" x="22" y="109">0</text>
+            <text class="date-label" x="22" y="131">Aug 1</text>
+            <text class="date-label" x="704" y="131" text-anchor="end">Aug 1</text>
+          </svg>
+        </figure>
+
+        <p class="section-label">REFRAME THESE ANSWERS</p>
+
+        <article class="answer-review">
+          <h2><span>1.</span> Vague introduction of the project without context or objectives.</h2>
+          <div class="answer-grid">
+            <div class="answer-card original"><h3>WHAT YOU SAID</h3><p>“The project will be Kito project.”</p></div>
+            <div class="answer-card improved"><h3>SAY IT LIKE THIS</h3><p>“I'd like to discuss the Kicho project, which was aimed at creating an ecommerce platform for restaurant promotion.”</p></div>
+          </div>
+        </article>
+
+        <article class="answer-review">
+          <h2><span>2.</span> This is not a product design decision and doesn’t address the interview question about user experience.</h2>
+          <div class="answer-grid">
+            <div class="answer-card original"><h3>WHAT YOU SAID</h3><p>“the hardest decision I made on the whole app making was deciding what domain to use”</p></div>
+            <div class="answer-card improved"><h3>SAY IT LIKE THIS</h3><p>“The toughest product decision was how to design the user journey for discovering and comparing restaurants while keeping the ranking logic behind the scenes.”</p></div>
+          </div>
+        </article>
+
+        <article class="answer-review">
+          <h2><span>3.</span> This lacks measurable outcomes or any qualitative insights about user interaction.</h2>
+          <div class="answer-grid">
+            <div class="answer-card original"><h3>WHAT YOU SAID</h3><p>“the first launch that it made, everyone was so fascinated. They loved the whole interface.”</p></div>
+            <div class="answer-card improved"><h3>SAY IT LIKE THIS</h3><p>“After the initial launch, user engagement increased by 20% and we received positive feedback on the interface's accessibility and design.”</p></div>
+          </div>
+        </article>
+
+        <section class="moves">
+          <p class="section-label">YOUR 3 MOVES</p>
+          <ol>
+            <li><span>1</span><p>Provide concrete metrics or qualitative feedback when discussing the outcomes of your projects. Showing measurable impact can strengthen your responses.</p></li>
+            <li><span>2</span><p>Develop a structured approach to answering questions, including problem definition, decision-making process, and outcome.</p></li>
+            <li><span>3</span><p>Focus on conveying your personal contributions and thought processes clearly. Highlight specific challenges you faced and how you addressed them.</p></li>
+          </ol>
+        </section>
+
+        <p class="worked"><strong>What worked:</strong> The candidate was able to quickly identify and mention specific roles and responsibilities they had on the Kicho project.</p>
+
+        <div class="report-actions">
+          <button class="primary" type="button">Close this gap</button>
+          <button class="secondary" type="button">Book a mentor for the real thing</button>
+          <a href="#">Back to scenarios</a>
         </div>
-
-        <div class="filters" aria-label="Interview filters">
-          <button class="active" data-filter="All" type="button">All</button>
-          <button data-filter="Popular" type="button">Popular</button>
-          <button data-filter="Design" type="button">Design</button>
-          <button data-filter="Product" type="button">Product</button>
-        </div>
-
-        <div class="cards" id="cards"></div>
-        <div class="empty" id="empty" hidden>
-          No interviews found. Try another search.
-        </div>
-      </section>
-
-      <section class="how" id="how">
-        <span class="kicker">HOW IT WORKS</span>
-        <h2>Practice. Learn. Get better.</h2>
-
-        <div class="steps">
-          <article>
-            <strong>01</strong>
-            <div class="stepIcon">↗</div>
-            <h3>Pick an interview</h3>
-            <p>
-              Choose a company-style scenario or paste the exact job you're
-              interviewing for.
-            </p>
-          </article>
-
-          <article>
-            <strong>02</strong>
-            <div class="stepIcon">●</div>
-            <h3>Talk it through out loud</h3>
-            <p>
-              Have a real spoken interview with 4 to 6 questions and genuine
-              follow-up probes.
-            </p>
-          </article>
-
-          <article>
-            <strong>03</strong>
-            <div class="stepIcon">✓</div>
-            <h3>Get an honest scorecard</h3>
-            <p>
-              See where you stand, the moments that cost you, and your three
-              moves to improve.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="quote">
-        <div class="quoteAvatar">JL</div>
-        <blockquote>
-          “It didn't feel like talking to a bot. The follow-up questions made
-          me stop and think—exactly what I needed before my real interview.”
-        </blockquote>
-        <p>Jamie L. · Product Designer</p>
-      </section>
-
-      <section class="faq" id="faq">
-        <span class="kicker">QUESTIONS, ANSWERED</span>
-        <h2>Frequently asked questions</h2>
-
-        <div class="faqList">
-          <button class="faqItem" type="button">
-            <div>
-              <b>Is the AI interview coach free?</b>
-              <span>⌄</span>
-            </div>
-            <p>
-              Yes. Practicing interviews on ADPList is completely free. Create
-              a free account, pick an interview and start practicing right away.
-            </p>
-          </button>
-
-          <button class="faqItem collapsed" type="button">
-            <div>
-              <b>What kinds of interviews can I practice?</b>
-              <span>⌄</span>
-            </div>
-            <p>
-              Product design and product management interviews, portfolio and
-              case-study walkthroughs, resume reviews and salary negotiations.
-            </p>
-          </button>
-
-          <button class="faqItem collapsed" type="button">
-            <div>
-              <b>How does the AI interviewer work?</b>
-              <span>⌄</span>
-            </div>
-            <p>
-              The coach asks 4–6 realistic questions, listens to your answers,
-              and follows up based on what you say.
-            </p>
-          </button>
-
-          <button class="faqItem collapsed" type="button">
-            <div>
-              <b>What feedback will I get?</b>
-              <span>⌄</span>
-            </div>
-            <p>
-              You receive a scorecard across five dimensions and three focused
-              ways to improve.
-            </p>
-          </button>
-        </div>
-      </section>
-
-      <section class="cta">
-        <span>✦</span>
-        <h2>Ready when you are.</h2>
-        <p>Free to practice. No scheduling, no waiting.</p>
-        <button class="open-modal" type="button">
-          Practice an interview →
-        </button>
       </section>
     </main>
 
-    <footer>
-      <div class="logo"><span>ADP</span>List</div>
-      <p>Practice makes progress.</p>
-      <span>© 2026 ADPList Pte. Ltd.</span>
-    </footer>
-
-    <div class="overlay" id="modal" hidden>
-      <div
-        class="modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-title"
-      >
-        <button class="close" type="button" aria-label="Close modal">×</button>
-        <span class="modalIcon">●</span>
-        <h2 id="modal-title">Start practicing for free</h2>
-        <p>
-          Create an account to save your interviews and get a personalized
-          scorecard.
-        </p>
-        <button class="google" type="button">G&nbsp; Continue with Google</button>
-        <button class="email" type="button">Continue with email</button>
-        <small>
-          By continuing, you agree to ADPList’s Terms and Privacy Policy.
-        </small>
-      </div>
-    </div>
-
+    <button class="chat" type="button" aria-label="Open chat">▰</button>
+    <button class="assistant" type="button" aria-label="AI assistant">✣</button>
+    <div class="toast" id="toast" role="status"></div>
     <script type="module" src="script.js"></script>
   </body>
 </html>
